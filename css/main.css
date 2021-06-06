@@ -86,9 +86,15 @@ textarea {
 /* ==========================================================================
    Rob Schuster's custom styles Begin here.  Thanks for looking at my code.
    ========================================================================== */
+
+html {
+      max-width: 100%;
+}
+
 body {
-      padding-left: 10px;
-      padding-right: 10px;
+      max-width: 1200px;
+      padding-left: 20px;
+      padding-right: 20px;
 }
 
 /* ------------------- Base Header - Footer Styles ---------------------*/
@@ -96,7 +102,7 @@ body {
 header, footer {
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       flex-flow: row nowrap;
 }
 
@@ -113,35 +119,42 @@ header figure {
 header .content-wrapper {
       display: flex;
       justify-content: center;
-      align-items: center;
-      flex-flow: column nowrap;
+      align-items: space-between;
+      flex-direction: column;
 }
 
 .header-divider {
-
+      border-top: 1px solid black;
 }
 
 header nav {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-direction: row nowrap;
+      justify-content: space-around;
+      flex-flow: row;
 }
 
 header nav ul {
       display: flex;
-      margin: 0;
 }
 
 header nav ul li {
       display: flex;
-      padding-left: 20px;
-      padding-right: 20px;
+}
+
+header nav ul li a {
+      display: flex;
+}
+
+#nav {
+      display: flex;
+      justify-content: space-between;
 }
 
 
-
 /* ------------------- Mobile Styles - Homepage ---------------------*/
+header, main, footer {
+      max-width: auto;
+}
 
 .hero-area {
       background-image: url('img/.jpg') norepeat;
@@ -152,7 +165,6 @@ aside {
       justify-content: flex-start;
       align-items: flex-start;
       flex-direction: column;
-
 }
 
 /* form  */
@@ -169,13 +181,21 @@ aside {
       justify-content: center;
       align-items: flex-start;
       flex-direction: column;
+}
 
+#form {
+      display: flex;
+      justify-content: center;
+      align-content: center;
 }
 
 /*  Features Area  */
 
-.features {
-
+#features {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
 }
 
 .features .content-wrapper {
@@ -187,8 +207,12 @@ aside {
 }
 
 .features-item-description {
+      display: flex;
+      justify-content: center;
+      text-align: center;
 
 }
+
 
 /*  Reviews  */
 
@@ -207,23 +231,39 @@ aside {
 /* Footer  */
 
 footer {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-flow: column nowrap;
 
 }
 
 footer .content-wrapper {
+      
 
 }
 
 footer .contact {
-
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row wrap;
+      text-align: center;
 }
 
 footer .social {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
 
 }
 
 .copyright {
-
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
 }
 
 
