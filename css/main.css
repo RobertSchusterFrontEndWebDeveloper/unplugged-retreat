@@ -84,8 +84,151 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   Rob Schuster's custom styles Begin here.  Thanks for looking at my code.
    ========================================================================== */
+body {
+      padding-left: 10px;
+      padding-right: 10px;
+}
+
+/* ------------------- Base Header - Footer Styles ---------------------*/
+
+header, footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row nowrap;
+}
+
+/*  Header Styles  */
+
+header {
+
+}
+
+header figure {
+
+}
+
+header .content-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column nowrap;
+}
+
+.header-divider {
+
+}
+
+header nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row nowrap;
+}
+
+header nav ul {
+      display: flex;
+      margin: 0;
+}
+
+header nav ul li {
+      display: flex;
+      padding-left: 20px;
+      padding-right: 20px;
+}
+
+
+
+/* ------------------- Mobile Styles - Homepage ---------------------*/
+
+.hero-area {
+      background-image: url('img/.jpg') norepeat;
+}
+
+aside {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+
+}
+
+/* form  */
+
+.form-description {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+}
+
+.form {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+
+}
+
+/*  Features Area  */
+
+.features {
+
+}
+
+.features .content-wrapper {
+
+}
+
+.features .features-items {
+
+}
+
+.features-item-description {
+
+}
+
+/*  Reviews  */
+
+.reviews {
+
+}
+
+.event {
+
+}
+
+
+
+
+
+/* Footer  */
+
+footer {
+
+}
+
+footer .content-wrapper {
+
+}
+
+footer .contact {
+
+}
+
+footer .social {
+
+}
+
+.copyright {
+
+}
+
+
+
+
 
 /* ==========================================================================
    Helper classes
@@ -260,4 +403,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
