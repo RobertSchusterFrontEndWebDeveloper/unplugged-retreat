@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Unplugged Retreat</title>
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta property="og:title" content="">
   <meta property="og:type" content="">
@@ -27,35 +27,40 @@
   <!-- My code begins here, Thanks for looking at my code! -->
 <header>
       <div class="content-wrapper">
-            <a href="#"><img src="" alt="unplugged logo" /></a>
+            <a href="#"><img src="img/unpluggedlogo.png" alt="unplugged logo" /></a>
             <div class="header-divider">
             </div>
             <nav>
-                  <ul id="nav">
-                        <li><a href="faq/index.html" target="_blank">FAQ</a></li>
-                        <li><a href="about/index.html" target="_blank">About</a></li>
+                  <ul>
+                        <li id="nav" id="nav"><a href="faq/index.html" target="_blank">FAQ</a></li>
+                        <li id="nav"><a href="about/index.html" target="_blank">About</a></li>
                   </ul>
             </nav>
       </div>
+      <section class="hero-area" id="title">
+            <h1>Retreat from the desk, return refreshed.</h1>
+      </section>
 </header>
 
 <main>
-      <section class="hero-area">
-            <h1>Retreat from the desk, return refreshed.</h1>
-      </section>
-      <!-- Sign up form -->
+      <!-- Newsletter Sign up form -->
       <aside>
             <div class="form-description">
-                  <h2>Want to join the next retreat?</h2>
-                  <p>Find out when we are holding our next retreat and how your company or team can sign up!</p>
-            </div>
-            <div class="form">
-                  <h2>Find out more</h2>
-                  <input type="text" name="name" value="email address">
-                  <input type="button" value="Download Itinerary">
+                  <div>
+                        <h3>Want to join the next retreat?</h3>
+                        <p>Find out when we are holding our next retreat and how your company or team can sign up!</p>
+                  </div>
+                  <div class="form">
+                        <h3>Find out more</h3>
+                        <div>
+                        <input type="text" name="name" value="email address">
+                  </div>
+                  <div>
+                        <input type="button" value="Download Itinerary">
+                  </div>
             </div>
       </aside>
-      <div id="features">
+      <div class="features">
             <div class="content-wrapper">
                   <div>
                    <h2>Have the work week you always dreamed of - without the bad wifi.</h2>
@@ -88,11 +93,11 @@
       </div>
       <section class="reviews">
             <div class="content-wrapper">
-                  <h1>Be a better team in 5 days, like these.</h1>
-                  <img src="" alt="Team LaCrue" />
+                  <h2>Be a better team in 5 days, like these.</h2>
+                  <img src="img/lacrue-bottling.jpg" alt="Team LaCrue" />
             </div>
-            <div class="event">
-                  <h2>LaCrue Bottling Co.<br/>October 2017</h2>
+            <div class="content-wrapper">
+                  <h3>LaCrue Bottling Co. October 2017</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incioidunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehendert in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             </div>
       </section>
@@ -109,18 +114,18 @@
                         </address>
                   </div>
                   <div class="social">
+                        <h2>social</h2>
                         <div class="social-icons">
-                              social
-                              <p><a href="https://www.facebook.com/yoursite" target="_blank"></a></p>
-                              <p><a href="https://www.twitter.com/yoursite" target="_blank"></a></p>
-                              <p><a href="https://www.snapchat.com/yoursite" target="_blank"></a></p>
+                              <p><a href="https://www.facebook.com/yoursite" target="_blank"><img src="img/facebook.png" alt="facebook icon" /></a></p>
+                              <p><a href="https://www.twitter.com/yoursite" target="_blank"><img src="img/twitter.png" alt="twitter icon" /></a></p>
+                              <p><a href="https://www.snapchat.com/yoursite" target="_blank"><img src="img/snap.png" alt="snapchat icon" /></a></p>
                         </div>
                   </div>
             </div><!-- footer content ends here -->
+            <div class="copyright">
+                  <p>copyright 2021 | Unplugged</p>
+            </div>
       </div> <!-- footer content wrapper ends here -->
-      <div class="copyright">
-            copyright 2021 | Unplugged
-      </div>
 
 </footer>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>

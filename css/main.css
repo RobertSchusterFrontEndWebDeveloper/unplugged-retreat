@@ -88,13 +88,27 @@ textarea {
    ========================================================================== */
 
 html {
-      max-width: 100%;
+      width: 100%;
+      height: auto;
+      font-size: 16px;
 }
 
 body {
       max-width: 1200px;
-      padding-left: 20px;
-      padding-right: 20px;
+      height: auto;
+      font-size: 1em;
+}
+/* universal classes  */
+
+.container {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-flow: column;
+      width: 100%;
+      height: auto;
 }
 
 /* ------------------- Base Header - Footer Styles ---------------------*/
@@ -102,170 +116,340 @@ body {
 header, footer {
       display: flex;
       justify-content: center;
-      align-items: flex-start;
-      flex-flow: row nowrap;
+      align-items: center;
+      flex-flow: row wrap;
 }
-
-/*  Header Styles  */
 
 header {
+      background-color: #202322;
+      padding: 15px 0 0 0;
+}
+
+header img {
+      width: 60%;
+      height: auto;
+}
+
+header nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      width: 100%;
+      height: auto;
+}
+
+header nav ul {
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 60%;
+}
+
+.header-divider {
+      border-bottom: 1px solid #527158;
+      width: 100%;
+}
+
+/*  Base header id's  */
+
+#nav {
+      display: flex;
+}
+
+/* -------------------****  Mobile First Styles  ****---------------------*/
+
+aside {
+      background-color: #527158;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-flow: row wrap;
+      width: 90.3%;
+      height: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+}
+
+footer {
+      background-color: #202322;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
 
 }
 
-header figure {
+footer .content-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 50px 0 0 0;
+      padding-right: 20px;
+      padding-left: 20px;
+}
 
+header, main, footer {
+      width: 100%;
+      height: auto;
 }
 
 header .content-wrapper {
       display: flex;
       justify-content: center;
-      align-items: space-between;
-      flex-direction: column;
-}
-
-.header-divider {
-      border-top: 1px solid black;
-}
-
-header nav {
-      display: flex;
-      justify-content: space-around;
-      flex-flow: row;
-}
-
-header nav ul {
-      display: flex;
-}
-
-header nav ul li {
-      display: flex;
-}
-
-header nav ul li a {
-      display: flex;
-}
-
-#nav {
-      display: flex;
-      justify-content: space-between;
-}
-
-
-/* ------------------- Mobile Styles - Homepage ---------------------*/
-header, main, footer {
-      max-width: auto;
-}
-
-.hero-area {
-      background-image: url('img/.jpg') norepeat;
-}
-
-aside {
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
-      flex-direction: column;
-}
-
-/* form  */
-
-.form-description {
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
-      flex-direction: column;
-}
-
-.form {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      flex-direction: column;
-}
-
-#form {
-      display: flex;
-      justify-content: center;
-      align-content: center;
-}
-
-/*  Features Area  */
-
-#features {
-      display: flex;
-      justify-content: center;
       align-items: center;
-      flex-direction: column;
-}
-
-.features .content-wrapper {
-
-}
-
-.features .features-items {
-
-}
-
-.features-item-description {
-      display: flex;
-      justify-content: center;
       text-align: center;
-
+      width: 100%;
+      padding: 0;
 }
 
+/*  ++++++++++++++  Classes section   +++++++++++++++++  */
 
-/*  Reviews  */
-
-.reviews {
-
-}
-
-.event {
-
-}
-
-
-
-
-
-/* Footer  */
-
-footer {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      flex-flow: column nowrap;
-
-}
-
-footer .content-wrapper {
-      
-
-}
-
-footer .contact {
+.contact {
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: row wrap;
+      flex-flow: column;
       text-align: center;
+      width: 100%;
+      height: auto;
 }
 
-footer .social {
+.contact-section {
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: row;
-
+      flex-direction: column;
+      width: 55%;
+      height: auto;
 }
 
 .copyright {
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: row;
+      text-align: center;
+      width: 100%;
+      height: auto;
+}
+
+.copyright p {
+      color: #fff;
+}
+
+.content-wrapper {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      padding-left: 20px;
+      padding-right: 20px;
+}
+
+.faq {
+      background-color: #527158;
+      padding: 15px 20px 0 20px;
+}
+
+.faq .content-wrapper {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      padding: 0;
+}
+
+.faq-content {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+}
+
+.features {
+      background-image: url('../img/camp-fire.jpg');
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      padding-left: 20px;
+      padding-right: 20px;
+}
+
+.features-items {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+}
+
+.features-item-description {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       text-align: center;
 }
 
+.features .content-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 55%;
+      height: auto;
+}
+
+.form {
+      width: 95%;
+}
+
+.form-description {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-flow: column;
+      width: 95%;
+}
+
+.footer-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+}
+
+.hero-area {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-flow: row wrap;
+}
+
+.map {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+}
+.map p{
+      color: black;
+}
+
+.mission {
+      background-color: #527158;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      padding-left: 20px;
+      padding-right: 20px;
+}
+
+.mission-content {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: row;
+}
+
+.mission .content-wrapper {
+      padding: 0;
+}
+
+.reviews {
+      background-color: #2a423a;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+}
+
+.reviews h3 {
+      width: 53%;
+}
+
+.reviews img {
+      width: 100%;
+      height: auto;
+}
+
+.social {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+}
+
+.social h2 p {
+      color: #fff;
+}
+
+.social-icons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+}
+
+.social img {
+      height: auto;
+      width: 4em;
+      padding: 25px;
+}
+
+/* --------- ##################   FONT STYLES ################# --------  */
+
+h1 {
+      color: #fff;
+}
+
+h2 {
+      color: #fff;
+}
+
+h3 {
+      color: #fff;
+}
+
+p {
+      color: #fff;
+}
+
+a {
+      color: #fff;
+}
+
+/* ##############  ID's section #####################  */
+#contact {
+      background-color: #2a423a;
+      padding-bottom: 54px;
+      width: 100%;
+      height: auto;
+}
+
+#form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+#title {
+      background-image: url('../img/hero.jpg');
+      background-size: cover;
+      background-position: center;
+      padding-left: 20px;
+      padding-right: 20px;
+      height: 600px;
+      width: auto;
+}
+
+/*  ==================  Responsive BREAK-POINTS BEGIN  ================== */
 
 
 
