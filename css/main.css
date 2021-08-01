@@ -220,8 +220,21 @@ header .content-wrapper {
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      width: 55%;
+      width: 48%;
       height: auto;
+      padding-top: 0;
+      padding-bottom: 0;
+}
+
+.contact-section h1 {
+      margin-top: 50px;
+      margin-bottom: 0;
+      padding-bottom: 0;
+}
+
+.contact-section h2 {
+      margin-top: 0;
+      margin-bottom: 0;
 }
 
 .copyright {
@@ -284,6 +297,7 @@ header .content-wrapper {
       justify-content: space-between;
       align-items: center;
       flex-direction: column;
+      width: 200px;
 }
 
 .features-item-description {
@@ -428,7 +442,6 @@ a {
 /* ##############  ID's section #####################  */
 #contact {
       background-color: #2a423a;
-      padding-bottom: 54px;
       width: 100%;
       height: auto;
 }
@@ -448,11 +461,6 @@ a {
       height: 600px;
       width: auto;
 }
-
-/*  ==================  Responsive BREAK-POINTS BEGIN  ================== */
-
-
-
 
 /* ==========================================================================
    Helper classes
@@ -537,20 +545,190 @@ a {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
+   MY Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px){
+      /*Tablet styles begin here */
+
+      aside {
+            padding-left: 60px;
+            padding-right: 20px;
+      }
+
+      #contact h1 {
+            margin-top: 50px 0 0 0;
+            padding-bottom: 0;
+            justify-content: space-between;
+            width: 100%;
+            text-align: left;
+      }
+
+      footer .content-wrapper {
+            width: 55%;
+            display: flex;
+            justify-content: space-around;
+      }
+
+      footer .contact {
+            padding-right: 150px;
+      }
+
+      footer p {
+            padding: 0;
+      }
+
+
+      header .content-wrapper {  /*  puts logo and nav links on same row  */
+            display: flex;
+            flex-direction: row;
+            padding-left: 60px;
+            padding-right: 60px;
+      }
+
+      .contact {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: row nowrap;
+      }
+
+      .contact-section {
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-flow: row wrap;
+            width: 100%;
+      }
+
+      .faq {
+            padding: 100px 50px 125px 50px;
+      }
+
+      .faq-content {
+            width: 85%;
+      }
+
+      .faq .content-wrapper {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+      }
+
+      .features {
+            display: flex;
+            align-items: center;
+            padding-left: 60px;
+            padding-right: 60px;
+      }
+
+      .features .content-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-flow: row wrap;
+            width: 85%;
+      }
+
+      .footer-content {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+            flex-flow: row;
+            width: 100%;
+            padding-left: 45px;
+      }
+
+      .form {
+            padding-left: 100px;
+      }
+
+      .form-description {
+            display: flex;
+            flex-flow: row;
+      }
+
+      .header-divider {  /* removes border on tablet size screen  */
+            border-bottom: none;
+      }
+
+      .info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-flow: row nowrap;
+            background-color: #2a423a;
+      }
+
+      .mission {
+            padding: 100px 50px 100px 50px;
+            width: 88%;
+      }
+
+      .mission-content {
+            width: 98%;
+            padding-right: 50px;
+      }
+
+      .mission .content-wrapper {  /* creates content in 2 columns on mission page */
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+      }
+
+      .reviews {  /* sets up reviews section to be centered in section  */
+            display: flex;
+            justify-content: flex-start;
+            align-items:flex-start;
+            flex-flow: column nowrap;
+            width: 100%;
+            padding-top: 80px;
+            padding-bottom: 80px;
+            padding-left: 40px;
+            padding-right: 40px;
+      }
+
+      .reviews .container {  /* changes reviews from single column to 2 side by side columns */
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-items: flex-end;
+      }
+
+      .reviews .content-wrapper {  /*  this makes the 2 reviews columns fit on a single row and not flow together  */
+            display: flex;
+            flex-flow: row wrap;
+            width: 45%;
+            padding: 0 20px 0 0;
+      }
+
+      .social img {  /* resizes image to fit with content   */
+            padding: 15px;
+      }
+
+      #title {
+            width: 100%;
+            padding-left: 50px;
+            padding-right: 50px;
+      }
+
+      #contact {  /* pads the top and bottom of the about page contact general contact section */
+            flex-flow: row;
+            padding: 100px 5% 100px 8%;
+      }
+
+      #contact div {
+            padding-right: 40px;
+      }
+
+      #contact-info {
+            display: flex;
+            flex-flow: column;
+      }
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+@media only screen and (min-width: 1200px) {
+      /*Desktop styles begin here  */
 }
 
 /* ==========================================================================
