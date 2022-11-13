@@ -87,21 +87,34 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+  padding: 20px;
+}
+
 /* ------------  Base Header  - Footer Styles -------------- */
 
 header,
 footer {
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* header styles */
 
 header {
-
+  flex-flow: row;
 }
 
 header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
 
+header img {
+  height: auto;
+  width: 80%;
 }
 
 header figure {
@@ -109,11 +122,18 @@ header figure {
 }
 
 .header-divider {
-
+  border-top: 2px solid black;
 }
 
 header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
+nav ul li a {
+  display: flex;
+  flex-direction: row;
 }
 
 /* ------------  Mobile Styles - Homepage -------------- */
