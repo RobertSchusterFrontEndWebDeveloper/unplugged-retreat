@@ -106,6 +106,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
 }
 
 /* header styles */
@@ -214,7 +215,7 @@ aside .form {
 
 /*  Reviews */
 
-section .reviews {
+.reviews {
 
 }
 
@@ -226,7 +227,7 @@ article img {
 
 }
 
-h3 {
+h1, h2, h3 {
   text-align: left;
   width: 100%;
 }
@@ -251,8 +252,15 @@ footer .footer-content {
 
 }
 
-.contact {
+.contact-section {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column;
+  width: 100%;
 
+}
+
+.contact-info {
 }
 
 
