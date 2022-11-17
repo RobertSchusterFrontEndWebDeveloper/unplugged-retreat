@@ -94,7 +94,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 15px 20px;
   height: auto;
   width: 100%;
 }
@@ -124,12 +124,23 @@ header {
   flex-direction: column;
 }
 
-header img {
+#logo-area {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row;
   height: auto;
   width: 100%;
+
+}
+
+header img {
+  height: auto;
+  width: 63%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 10px 20%;
 }
 
 header figure {
@@ -139,6 +150,7 @@ header figure {
 .header-divider {
   border-top: 2px solid black;
   width: 90%;
+  padding-bottom: 10px;
 }
 
 header .navigation {
