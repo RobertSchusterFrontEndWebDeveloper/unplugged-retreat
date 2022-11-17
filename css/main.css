@@ -118,7 +118,7 @@ footer {
 header {
   justify-content: center;
   align-items: center;
-  padding: 15px 0;
+  padding: 1em 0;
   width: 100%;
 }
 
@@ -147,6 +147,7 @@ header img {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 0 0.5em 2.75em;
 }
 
 header figure {
@@ -156,7 +157,7 @@ header figure {
 .header-divider {
   border-top: 2px solid black;
   width: 90%;
-  padding-bottom: 10px;
+  padding-bottom: 0.50em;
 }
 
 header .navigation {
@@ -170,7 +171,7 @@ header nav {
 header nav ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   padding: 0;
 }
@@ -213,11 +214,17 @@ aside .form {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 0 0 35px 0;
+  padding: 0 0 2.18em 0;
 }
 
 .form h3 {
-  padding-bottom: 10px;
+  padding-bottom: 0.62em;
+}
+
+input {
+  text-align: center;
+  margin: 0.62em 0;
+  padding: 0.62em 0;
 }
 
 
@@ -250,6 +257,11 @@ features p {
 
 .reviews {
   flex-flow: row wrap;
+  padding: 4.50em 0 0 0;
+}
+
+.reviews h3 {
+  padding: 0 0 1.50em 0;
 }
 
 article img {
@@ -284,8 +296,8 @@ footer .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row;
-  width: 55%;
-  margin: 50px 0;
+  width: 80%;
+  margin: 0;
 }
 
 footer .footer-content {
@@ -324,6 +336,16 @@ footer .footer-content {
 
 .mission {
   flex-flow: row wrap;
+}
+
+.contact-section h4 {
+  margin: 0;
+  padding: 1.25em 0 0.25em 0;
+}
+
+.contact-section p {
+  margin: 0;
+  padding: 0;
 }
 
 
