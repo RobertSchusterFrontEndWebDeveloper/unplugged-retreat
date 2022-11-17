@@ -117,11 +117,12 @@ header {
   width: 100%;
 }
 
-.content-wrapper {
+header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-flow: row wrap;
+  width: 100%;
 }
 
 #logo-area {
@@ -140,7 +141,6 @@ header img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 0 10px 20%;
 }
 
 header figure {
@@ -157,14 +157,20 @@ header .navigation {
 }
 
 header nav {
+  flex-flow: row wrap;
+  width: 60%;
 }
 
-ul {
+header nav ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  width: 300px;
+  justify-content: space-between;
+  width: 100%;
   padding: 0;
+}
+
+header nav ul li {
+  width: 25%;
 }
 
 /* ------------  Mobile Styles - Homepage -------------- */
@@ -186,7 +192,7 @@ main .content-wrapper {
 /*  Aside  */
 
 aside {
-
+  flex-flow: row wrap;
 }
 
 aside .content-wrapper {
@@ -214,8 +220,9 @@ aside .form {
   width: 100%;
 }
 
-.features-item {
+.features .features-item {
   display: contents;
+  flex-flow: row wrap;
 }
 
 .features-item-description {
@@ -228,7 +235,7 @@ aside .form {
 /*  Reviews */
 
 .reviews {
-
+  flex-flow: row wrap;
 }
 
 article img {
@@ -258,6 +265,8 @@ footer .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row;
+  width: 55%;
+  margin: 50px 0;
 }
 
 footer .footer-content {
@@ -267,9 +276,13 @@ footer .footer-content {
 .contact-section {
   display: flex;
   justify-content: flex-start;
-  flex-flow: column;
+  flex-flow: row wrap;
   width: 100%;
 
+}
+
+address {
+  width: 100%;
 }
 
 .contact-info {
@@ -287,6 +300,23 @@ footer .footer-content {
 
 .social-icons {
   flex-flow: row;
+}
+
+/* --------  About Page Layout  ---------- */
+
+.mission {
+  flex-flow: row wrap;
+}
+
+
+/* -----------FAQ Page Layout -----------*/
+
+.faq {
+  flex-flow: row wrap;
+}
+
+.faq .content-wrapper {
+  flex-flow: row wrap;
 }
 
 /* ==========================================================================
