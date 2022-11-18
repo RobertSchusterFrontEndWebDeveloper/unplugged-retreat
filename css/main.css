@@ -237,7 +237,7 @@ input {
   width: 100%;
 }
 
-features p {
+.features p {
   margin: 0;
 }
 
@@ -447,8 +447,33 @@ footer .footer-content {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for Tablets */
+  .header-divider {
+    border-top: 0;
+  }
+
+  header .content-wrapper {
+    flex-flow: row nowrap;
+  }
+
+  main .content-wrapper {
+    flex-flow: row;
+    align-items: flex-start;
+    padding-top: 3.5em;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+
+  section .content-wrapper {
+    height: 14em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Desktop styles here */
 }
 
 @media print,
