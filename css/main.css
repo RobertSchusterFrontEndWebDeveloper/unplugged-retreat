@@ -196,7 +196,7 @@ main .content-wrapper {
 }
 
 
-/*  Aside  */
+/*  Aside - Form section  */
 
 aside {
   flex-flow: row wrap;
@@ -464,6 +464,8 @@ footer .footer-content {
     width: 100%;
   }
 
+  /* Aside and form section */
+
   .form-description p {
     padding: 0;
     justify-content: space-between;
@@ -484,6 +486,7 @@ footer .footer-content {
     padding: 0;
   }
 
+  /* Features section */
   .features {
     justify-content: space-between;
     flex-direction: row;
@@ -508,29 +511,31 @@ footer .footer-content {
     height: auto;
   }
 
+  /* Reviews section */
+
   .reviews {
-    flex-flow: column;
+    flex-flow: row nowrap;
     width: 100%;
   }
 
-  .reviews-content-wrapper {
+  article {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
   }
 
   .reviews h4 {
     padding: 0;
     margin: 0;
   }
-  
+
   .reviews img {
-    width: 50%;
+    width: 44%;
   }
 
-  .review-description {
-    width: 50%;
+  #review-description {
+    width: 44%;
   }
 }
 
