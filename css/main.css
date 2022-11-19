@@ -234,6 +234,7 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: column;
   width: 100%;
 }
 
@@ -458,17 +459,57 @@ footer .footer-content {
   }
 
   main .content-wrapper {
-    flex-flow: row;
+    flex-flow: row wrap;
     align-items: flex-start;
-    padding-top: 3.5em;
+    width: 100%;
+  }
+
+  .form-description p {
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  aside .form-description {
+    width: 50%;
+  }
+
+  aside .form {
+    padding: 0 0 0.18em 0;
+    width: 50%;
+  }
+
+  input {
+    margin: 0.13em 0;
+    padding: 0;
   }
 
   .features {
-    flex-direction: column;
+    justify-content: space-between;
+    flex-direction: row;
+    height: auto;
+    padding: 0;
   }
 
-  section .content-wrapper {
-    height: 14em;
+  .features p {
+    margin: 0;
+    padding: 0 4em 0 0;
+  }
+
+  .features .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid red;
+  }
+
+  .features-item-description {
+    width: 40%;
+    height: auto;
+  }
+
+  .reviews h3 {
+
   }
 }
 
