@@ -391,7 +391,7 @@ aside {
    ========================================================================== */
 
 @media only screen and (min-width:768px) {
-  /* Style adjustments for Tablets */
+  /* ---------Style for Tablets ---------------- */
   
   /* All Tablet styles */
   .content-wrapper {
@@ -497,6 +497,10 @@ aside {
   .mission-content p {
     width: 45%;
   }
+
+  .map {
+    text-align: center;
+    }
   
   .contact-section .content-wrapper h2 {
     width: 80%;
@@ -508,7 +512,7 @@ aside {
     align-items: flex-start;
   }
   
-  /* FAQ Tablet */
+  /* -------- FAQ Page --------- */
   
   .faq .content-wrapper {
     justify-content: space-between;
@@ -524,8 +528,62 @@ aside {
 }
 
 @media only screen and (min-width: 1200px) {
-  /* Desktop styles here */
-}
+  /* ---------------Desktop styles here ----------------- */
+
+  /* All Desktop styles */
+  .content-wrapper {
+    max-width: 75em;
+    margin: 27.75em 0;
+  }
+
+    /* Header */
+  header {
+    max-width: 2400px;
+  }
+
+  header .content-wrapper {
+      display: flex;
+      flex-flow: row nowrap;
+  }
+
+    /*. Aside Section */
+
+  aside .content-wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+
+    /* Features section */
+  .features article {
+    flex-basis: 33%;
+  }
+
+  .features .features-item-description {
+    width: 60%;
+  }
+
+    /* Reviews Section */
+  .reviews {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .reviews article div {
+    width: 49%;
+  }
+
+  footer .copyright {
+    display: flex;
+    justify-content: space-around;
+  }
+
+    /* -----------  About Page Desktop ----------- */
+    /* Contact Section */
+
+    .contact-content {
+      align-items: center;
+      justify-content: space-between;
+    }
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
