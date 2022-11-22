@@ -532,13 +532,13 @@ aside {
 
   /* All Desktop styles */
   .content-wrapper {
-    max-width: 75em;
-    margin: 27.75em 0;
+    max-width: 60em;
   }
 
     /* Header */
   header {
-    max-width: 2400px;
+    justify-content: flex-end;
+    width:90%;
   }
 
   header .content-wrapper {
@@ -546,11 +546,23 @@ aside {
       flex-flow: row nowrap;
   }
 
+    /* Hero Section */
+  .hero h1 {
+      width: 75%;
+    }
+
     /*. Aside Section */
 
   aside .content-wrapper {
-    display: flex;
     justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description, aside .content-wrapper .form {
+    width: 35%;
+  }
+
+  input {
+    width: 65%;
   }
 
     /* Features section */
@@ -560,6 +572,10 @@ aside {
 
   .features .features-item-description {
     width: 60%;
+  }
+
+  .features h2 {
+    width: 100%;
   }
 
     /* Reviews Section */
@@ -580,10 +596,19 @@ aside {
     /* -----------  About Page Desktop ----------- */
     /* Contact Section */
 
-    .contact-content {
+  .contact-content {
       align-items: center;
       justify-content: space-between;
     }
+
+  .mission h2, .contact-section .content-wrapper h2 {
+      width: 100%;
+  }
+  
+  /* FAQ Page */
+  .faq h2 {
+      width: 100%;
+  }
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
