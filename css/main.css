@@ -99,25 +99,32 @@ body {
 
 ul,
 ol {
-
+    list-style-type: none;
 }
 
 a {
+    color: #e2e3ed;
+    text-decoration: none;
+}
 
+h1 {
+    font-size: 4em;
 }
 
 h2 {
     font-family: 'Poppins', sans-serif;
-    
+    font-size: 1.875em;
 }
 
 h3,
 h4 {
     font-family: 'Poppins', sans-serif;
+    font-size: 1.125em;
 }
 
 p {
-
+    font-size: .875em;
+    line-height: 1.285;
 }
 
 img {
@@ -129,11 +136,12 @@ figure {
 }
 
 address {
-
+    font-style: normal;
 }
 
 .content-wrapper {
-
+    width: 90%;
+    margin: 3.125px 0;
 }
 
 /* ------------  Base Header  - Footer Styles -------------- */
