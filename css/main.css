@@ -109,7 +109,7 @@ a {
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 3.0em;
 }
 
 h2 {
@@ -130,6 +130,7 @@ p {
 
 h1, h2, h3, h4, p {
     color: #e2e3ed;
+    font-weight: 100;
 }
 
 img {
@@ -318,6 +319,11 @@ aside {
   flex-flow: row wrap;
 }
 
+ .features .features-item-description {
+    text-align: center;
+    line-height: 1.25;
+  }
+
 .features article {
   width: 63%;
   margin: 1.875em 0;
@@ -474,9 +480,8 @@ aside {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
+   Media Queries for Responsive Design.
+   
    ========================================================================== */
 
 @media only screen and (min-width:768px) {
@@ -622,6 +627,19 @@ aside {
   /* All Desktop styles */
   .content-wrapper {
     max-width: 60em;
+  }
+  
+  h2 {
+      font-size: 2em;
+  }
+  
+  h3,
+  h4 {
+      font-size: 1.50em;
+  }
+  
+  p {
+      font-size: 1em;
   }
 
     /* Header */
