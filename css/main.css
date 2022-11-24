@@ -280,6 +280,8 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/hero.jpg') center no-repeat #333; /* image source "Jake-Melara-30679-unsplash */
+  background-size: cover;
 }
 
 /*  Aside - Form section  */
@@ -302,6 +304,8 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/camp-fire.jpg') center no-repeat #333; /* image source 'rawpixel-800820-unsplash1 */
+  background-size: cover;
 }
 
 .features h2 {
