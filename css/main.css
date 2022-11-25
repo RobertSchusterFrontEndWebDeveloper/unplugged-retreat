@@ -274,8 +274,15 @@ footer .social-icons {
 
 footer .social-icons p {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
+  font-size: 40px;
+  margin: 0;
+  padding: 0 10px;
+}
+
+footer .fa-brands {
+  color: #537158;
 }
 
 footer .copyright {
@@ -441,15 +448,15 @@ aside {
 }
 
 .faq h2 {
-    margin-bottom: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .faq-content {
-    margin-bottom: 1.0em;
+  margin-bottom: 1.0em;
 }
 
 .faq-content p {
-    margin: 0;
+  margin: 0;
 }
 
 /* ==========================================================================
@@ -550,7 +557,7 @@ aside {
   
   h3,
   h4 {
-      font-size: 1.5em;
+    font-size: 1.5em;
   }
   
   /* Header */
@@ -566,12 +573,12 @@ aside {
   }
   
   h1 {
-      font-size: 3.4em;
+    font-size: 3.4em;
   }
   
   header figure {
-      width: 30%;
-      justify-content: flex-start;
+    width: 30%;
+    justify-content: flex-start;
   }
   
   header nav {
@@ -604,11 +611,11 @@ aside {
   }
   
   input[type=button] {
-      width: 100%;
-      padding: 20px 0;
-      margin-top: 20px;
-      font-weight: 500;
-      font-size: 1.125em;
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 1.125em;
   }
 
   /* Features section */
@@ -618,6 +625,10 @@ aside {
     align-items: center;
     flex-flow: column wrap;
     flex-basis: 50%;
+  }
+
+  .features i {
+    font-size: 4.375em;
   }
 
   .features .features-item-description {
@@ -645,7 +656,7 @@ aside {
   .footer-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
   }
 
   footer .contact {
@@ -659,7 +670,7 @@ aside {
   /* ---- About Page ---- */
   
   .mission {
-      padding: 0 10px;
+    padding: 0 10px;
   }
   
   .mission-content {
@@ -717,20 +728,20 @@ aside {
   }
   
   h1 {
-      font-size: 3em;
+    font-size: 3em;
   }
   
   h2 {
-      font-size: 2em;
+    font-size: 2em;
   }
   
   h3,
   h4 {
-      font-size: 1.50em;
+    font-size: 1.50em;
   }
   
   p {
-      font-size: 1em;
+    font-size: 1em;
   }
 
     /* Header */
@@ -740,8 +751,8 @@ aside {
   }
 
   header .content-wrapper {
-      display: flex;
-      flex-flow: row nowrap;
+    display: flex;
+    flex-flow: row nowrap;
   }
 
     /* Hero Section */
@@ -766,6 +777,10 @@ aside {
     /* Features section */
   .features article {
     flex-basis: 33%;
+  }
+
+  .features i {
+    font-size: 3.75em;
   }
 
   .features .features-item-description {
@@ -818,7 +833,7 @@ aside {
   }
   
   .faq-content {
-      margin-bottom: 3.125em;
+    margin-bottom: 3.125em;
   }
 
 @media print,
