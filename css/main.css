@@ -377,7 +377,7 @@ aside {
 
 .map-container {
   position: relative;
-  padding-bottom: 75%;
+  padding-bottom: 55%;
   height: 0;
   overflow: hidden;
 }
@@ -665,9 +665,9 @@ aside {
     width: 45%;
   }
 
-  .map {
-    text-align: center;
-    }
+  .map-container {
+    padding-bottom: 45%;
+  }
   
   .contact-section .content-wrapper h2 {
     width: 80%;
@@ -789,6 +789,11 @@ aside {
   .contact-section {
     padding: 3.125px 0;
   }
+
+  .map-container {
+    padding-bottom: 36%;
+  }
+
   .contact-content {
     align-items: center;
     justify-content: space-between;
