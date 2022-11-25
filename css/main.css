@@ -646,10 +646,24 @@ aside {
   .reviews article {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
   }
   
   .reviews article div {
-    width: 49%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column;
+    flex-basis: 320px;
+  }
+
+  .reviews article figure {
+    width: 100%;
+  }
+
+  .reviews h3, .reviews p {
+    margin: 0;
+    width: 90%;
   }
 
   /* Footer */
@@ -804,8 +818,14 @@ aside {
   }
 
   .reviews article div {
-    width: 49%;
+    flex-basis: 600px;
   }
+
+  .reviews article p {
+    padding-top: 10px;
+  }
+
+  /*  Footer  */
 
   footer .copyright {
     display: flex;
