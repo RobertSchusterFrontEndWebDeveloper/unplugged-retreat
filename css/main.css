@@ -248,7 +248,7 @@ input[type=button] {
     padding: 20px 0;
     margin-top: 20px;
     background-color: #2a423a;
-    font-family: 'Poppins' Helvetica, Arial, sans-serif;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
     font-weight: 500;
     font-size: 1.125em;
     color: #e2e3ed;
@@ -516,6 +516,11 @@ aside {
     margin: 6.25em 0;
   }
   
+  h3,
+  h4 {
+      font-size: 1.5em;
+  }
+  
   /* Header */
   
   header {
@@ -526,6 +531,10 @@ aside {
   header .content-wrapper {
     justify-content: space-between;
     width: 100%;
+  }
+  
+  h1 {
+      font-size: 3.4em;
   }
   
   header figure {
@@ -546,7 +555,6 @@ aside {
   }
 
   /* Hero Area */ 
-        /*- No adjustments */
   
     /* Aside and form section */
   
@@ -561,6 +569,14 @@ aside {
   aside .content-wrapper .form-description, aside .content-wrapper .form {
     width: 40%;
     margin: 0;
+  }
+  
+  input[type=button] {
+      width: 100%;
+      padding: 20px 0;
+      margin-top: 20px;
+      font-weight: 500;
+      font-size: 1.125em;
   }
 
   /* Features section */
