@@ -89,66 +89,66 @@ textarea {
 
 /* General Styles */
 html {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
-    background-color: #212322;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  background-color: #212322;
 }
 
 ul,
 ol {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 a {
-    color: #e2e3ed;
-    text-decoration: none;
+  color: #e2e3ed;
+  text-decoration: none;
 }
 
 h1 {
-    font-size: 2.3em;
-    line-height: 1.2;
+  font-size: 2.3em;
+  line-height: 1.2;
 }
 
 h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.875em;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
 }
 
 h3,
 h4 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.125em;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
 }
 
 p {
-    font-size: .875em;
-    line-height: 1.285;
+  font-size: .875em;
+  line-height: 1.285;
 }
 
 h1, h2, h3, h4, p {
-    color: #e2e3ed;
-    font-weight: 100;
+  color: #e2e3ed;
+  font-weight: 100;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 figure {
-    margin: 0;
+  margin: 0;
 }
 
 address {
-    font-style: normal;
+  font-style: normal;
 }
 
 .content-wrapper {
-    width: 90%;
-    margin: 3.125px 0;
+  width: 90%;
+  margin: 3.125px 0;
 }
 
 /* ------------  Base Header  - Footer Styles -------------- */
@@ -177,11 +177,11 @@ header .content-wrapper {
 }
 
 header figure {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .header-divider {
@@ -236,25 +236,25 @@ footer .contact-section {
 
 /* Form - Input */
 input[type=text] {
-    box-sizing: border-box;
-    width: 100%;
-    color: #2a423a;
-    font-style: italic;
-    padding: 1em;
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
 }
 
 input[type=button] {
-    width: 100%;
-    padding: 20px 0;
-    margin-top: 20px;
-    background-color: #2a423a;
-    font-family: 'Poppins', Helvetica, Arial, sans-serif;
-    font-weight: 500;
-    font-size: 1.125em;
-    color: #e2e3ed;
-    border: none;
-    text-align: center;
-    text-transform: uppercase;
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* Social  */
@@ -328,6 +328,14 @@ aside {
   margin: 0;
 }
 
+.features i {
+  display: flex;
+  font-size: 3.75em;
+  margin-bottom: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
 .features .features-item {
   display: flex;
   justify-content: center;
@@ -336,9 +344,9 @@ aside {
 }
 
  .features .features-item-description {
-    text-align: center;
-    line-height: 1.25;
-  }
+  text-align: center;
+  line-height: 1.25;
+}
 
 .features article {
   width: 63%;
