@@ -279,6 +279,7 @@ footer .social-icons p {
 }
 
 footer .copyright {
+  text-align: center;
   margin: 1.25em 0;
 }
 
@@ -662,8 +663,9 @@ aside {
   }
   
   .faq .content-wrapper {
-    margin: 3.125em 0 0 0;
+    margin: 6.25em 0;
     justify-content: space-between;
+    align-items: flex-start;
   }
 
   .faq h2 {
