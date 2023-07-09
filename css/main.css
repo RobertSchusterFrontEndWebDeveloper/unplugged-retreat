@@ -124,12 +124,16 @@ h4 {
   font-size: 1.125em;
 }
 
+h5 {
+  font-size: 1em;
+}
+
 p {
   font-size: .875em;
   line-height: 1.285;
 }
 
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, h5, p {
   color: #e2e3ed;
   font-weight: 100;
 }
