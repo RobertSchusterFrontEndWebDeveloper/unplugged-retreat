@@ -790,10 +790,7 @@ aside {
   }
 
     /* Header */
-  header {
-    justify-content: flex-end;
-    width:90%;
-  }
+
 
   header .content-wrapper {
     display: flex;
